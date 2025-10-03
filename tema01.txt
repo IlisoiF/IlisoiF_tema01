@@ -1,1 +1,30 @@
+Tehnologia OpenGL și derivatele sale
 
+Introducere
+OpenGL (Open Graphics Library) este una dintre cele mai utilizate biblioteci grafice pentru dezvoltarea aplicațiilor 2D și 3D. Lansată la începutul anilor ’90, a devenit rapid un standard deschis pentru randarea multiplatformă și a stat la baza multor aplicații din domenii precum jocurile video, simulările sau aplicațiile CAD. În timp, din OpenGL au apărut și derivate adaptate pentru diferite nevoi, cum ar fi WebGL sau OpenGL ES.
+
+Opinii personale
+Din punctul meu de vedere, OpenGL are o importanță istorică și educațională foarte mare. Este o tehnologie care a deschis drumul graficii pe calculator și a permis multor programatori să învețe conceptele de bază ale randării 3D. În același timp, trebuie recunoscut faptul că astăzi OpenGL este mai puțin competitiv față de API-uri mai moderne precum Vulkan sau DirectX 12. Cu toate acestea, pentru învățare și prototipare, OpenGL rămâne o alegere solidă.
+
+Puncte tari
+-Este un standard deschis, nefiind controlat de o singură companie.
+-Funcționează pe mai multe platforme (Windows, Linux, macOS).
+-Are o documentație vastă și o comunitate activă.
+-Oferă derivate utile:
+  -OpenGL ES pentru telefoane și console portabile.
+  -WebGL care aduce grafica 3D direct în browser.
+
+Puncte slabe
+-Multe concepte din OpenGL sunt considerate azi învechite.
+-Codul scris cu OpenGL devine ușor încărcat și greu de gestionat în proiecte mari.
+-Performanța este mai mică în comparație cu tehnologiile moderne care oferă acces direct la hardware.
+-Au existat numeroase deprecieri de funcții, ceea ce complică învățarea.
+
+Modelul de automat cu stări finite în OpenGL
+OpenGL funcționează ca o mașină de stări. Practic, biblioteca reține permanent un „context” cu parametrii setați de programator: culoare curentă, texturi active, modul de iluminare etc. Atunci când se face un apel de randare, obiectele sunt desenate în funcție de stările curente.
+
+Acest model are un impact direct asupra procesului de randare:
+-Simplifică lucrurile pentru începători, deoarece nu este nevoie să treci toate setările de fiecare dată.
+-Totuși, în proiecte mari, poate fi dificil de urmărit ce stare este activă la un moment dat, ceea ce duce la erori și la un cod greu de întreținut.
+
+API-urile moderne (Vulkan, DirectX 12) au renunțat la această abordare și folosesc modele mai clare și mai explicite, ceea ce oferă mai multă performanță și previzibilitate.
